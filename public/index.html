@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores del Ecuador | Catálogo en Línea</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,800;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Banner -->
+    <header class="hero-header">
+        <div class="header-overlay"></div>
+        <div class="container header-content">
+            <div class="brand-badge">
+                <span class="flag-stripe yellow"></span>
+                <span class="flag-stripe blue"></span>
+                <span class="flag-stripe red"></span>
+                <span class="badge-text">Gastronomía Auténtica</span>
+            </div>
+            <h1>Sabores del Ecuador 🇪🇨</h1>
+            <p class="subtitle">Catálogo interactivo de nuestra riqueza culinaria andina, costeña y amazónica</p>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <!-- Control Panel: Filters and Search -->
+        <section class="filter-panel" id="filtros">
+            <div class="panel-header">
+                <h2><i class="fa-solid fa-sliders"></i> Filtros de búsqueda</h2>
+                <button id="btnReset" class="btn-reset" title="Restablecer filtros">
+                    <i class="fa-solid fa-rotate-left"></i> Limpiar Filtros
+                </button>
+            </div>
+
+            <div class="filters-grid">
+                <!-- Search bar -->
+                <div class="filter-group search-group">
+                    <label for="searchInput"><i class="fa-solid fa-magnifying-glass"></i> Buscar Platillo</label>
+                    <div class="search-input-wrapper">
+                        <input type="text" id="searchInput" placeholder="Ej. Encebollado, Locro, Bolón...">
+                        <button id="btnClearSearch" class="btn-clear-input" style="display: none;">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 1. Filtro por Marca -->
+                <div class="filter-group">
+                    <label for="selectMarca"><i class="fa-solid fa-award"></i> Marca / Tradición</label>
+                    <select id="selectMarca">
+                        <option value="">Todas las marcas</option>
+                    </select>
+                </div>
+
+                <!-- 2. Filtro por Categoría / Tipo -->
+                <div class="filter-group">
+                    <label for="selectCategoria"><i class="fa-solid fa-utensils"></i> Tipo / Categoría</label>
+                    <select id="selectCategoria">
+                        <option value="">Todas las categorías</option>
+                    </select>
+                </div>
+
+                <!-- 3. Filtro por Precio Máximo -->
+                <div class="filter-group price-group">
+                    <div class="price-header">
+                        <label for="rangePrecio"><i class="fa-solid fa-dollar-sign"></i> Precio Máximo</label>
+                        <span id="priceDisplay" class="price-display">$20.00</span>
+                    </div>
+                    <input type="range" id="rangePrecio" min="0" max="20" step="0.50" value="20">
+                    <div class="range-labels">
+                        <span>$0</span>
+                        <span>$20</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categories Quick Pills -->
+            <div class="category-pills" id="categoryPills">
+                <button class="pill-btn active" data-category="">Todos</button>
+            </div>
+
+            <!-- Sort and Results Count Bar -->
+            <div class="results-bar">
+                <div class="results-count" id="resultsCount">
+                    Cargando catálogo de platillos...
+                </div>
+                <div class="sort-wrapper">
+                    <label for="selectSort"><i class="fa-solid fa-arrow-down-short-wide"></i> Ordenar por:</label>
+                    <select id="selectSort">
+                        <option value="default">Recomendados</option>
+                        <option value="price-asc">Precio: Menor a Mayor</option>
+                        <option value="price-desc">Precio: Mayor a Menor</option>
+                        <option value="name-asc">Nombre: A - Z</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Catalog Grid -->
+        <section class="catalog-section">
+            <div id="catalogGrid" class="catalog-grid">
+                <!-- Tarjetas cargadas dinámicamente -->
+            </div>
+
+            <!-- Mensaje cuando no hay resultados -->
+            <div id="noResults" class="no-results" style="display: none;">
+                <div class="no-results-icon">
+                    <i class="fa-solid fa-bowl-food"></i>
+                </div>
+                <h3>No encontramos platillos con los filtros seleccionados</h3>
+                <p>Intenta ajustar el precio máximo o cambiar la categoría/marca seleccionada.</p>
+                <button id="btnResetEmpty" class="btn-primary">Ver todo el catálogo</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal de Detalle de Producto -->
+    <div id="productModal" class="modal-backdrop" style="display: none;">
+        <div class="modal-card">
+            <button id="btnCloseModal" class="btn-close-modal" aria-label="Cerrar modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="modal-content" id="modalContent">
+                <!-- Se llena dinámicamente -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© 2026 Sabores del Ecuador - Catálogo Interactivo en Línea</p>
+            <p class="tech-stack">
+                <span class="tech-badge"><i class="fa-brands fa-node-js"></i> Node.js & Express</span>
+                <span class="tech-badge"><i class="fa-brands fa-docker"></i> Dockerized</span>
+                <span class="tech-badge"><i class="fa-solid fa-code"></i> JSON Dataset</span>
+            </p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+

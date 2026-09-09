@@ -1,0 +1,153 @@
+[
+  {
+    "id": 1,
+    "nombre": "Encebollado Mixto de Pescado y Camarón",
+    "marca": "Tradición Costeña",
+    "categoria": "Sopas Tradicionales",
+    "precio": 6.50,
+    "imagen": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80",
+    "descripcion": "El clásico plato guayaquileño elaborado con albacora fresca, camarones, yuca, cebolla curtida, cilantro y especias. Acompañado de chifle y tostado.",
+    "region": "Costa"
+  },
+  {
+    "id": 2,
+    "nombre": "Locro de Papa con Queso y Aguacate",
+    "marca": "Sierra Andina",
+    "categoria": "Sopas Tradicionales",
+    "precio": 5.00,
+    "imagen": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=600&q=80",
+    "descripcion": "Sopa cremosa tradicional andina hecha a base de papa chola, queso fresco ecuatoriano, servida con tajada de aguacate y cuero crujiente.",
+    "region": "Sierra"
+  },
+  {
+    "id": 3,
+    "nombre": "Seco de Chivo Tradicional",
+    "marca": "Tradición Costeña",
+    "categoria": "Platos Fuertes",
+    "precio": 9.50,
+    "imagen": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80",
+    "descripcion": "Guiso espeso y aromático de carne de chivo marinada en chicha de jora y cerveza, acompañado de arroz amarillo y maduro frito.",
+    "region": "Costa"
+  },
+  {
+    "id": 4,
+    "nombre": "Bolón de Verde con Queso y Chicharrón",
+    "marca": "Manabí Gourmet",
+    "categoria": "Entradas y Piqueos",
+    "precio": 4.25,
+    "imagen": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=600&q=80",
+    "descripcion": "Bola crujiente de plátano verde majado rellena de abundante queso manaba y chicharrón de cerdo frito al momento.",
+    "region": "Costa / Manabí"
+  },
+  {
+    "id": 5,
+    "nombre": "Hornado Carchi con Llapingachos",
+    "marca": "Sierra Andina",
+    "categoria": "Platos Fuertes",
+    "precio": 8.75,
+    "imagen": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=600&q=80",
+    "descripcion": "Cerdo horneado lentamente en leña con chicha y especias, servido con tortillas de papa (llapingachos), agrio casero y ensalada de col.",
+    "region": "Sierra"
+  },
+  {
+    "id": 6,
+    "nombre": "Ceviche de Camarón Manabita",
+    "marca": "Manabí Gourmet",
+    "categoria": "Platos Fuertes",
+    "precio": 8.00,
+    "imagen": "https://images.unsplash.com/photo-1535399831218-d5bd36d1a6b3?auto=format&fit=crop&w=600&q=80",
+    "descripcion": "Camarones seleccionados cocinados al punto exacto en jugo de naranja fresca, limón, tomate, cilantro y un toque de maní.",
+    "region": "Costa"
+  },
+  {
+    "id": 7,
+    "nombre": "Guatita Porteña",
+    "marca": "Tradición Costeña",
+    "categoria": "Platos Fuertes",
+    "precio": 7.00,
+    "imagen": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80",
+    "descripcion": "Guiso criollo de mondongo suave en salsa cremosa de maní, papa en cubos, servido con arroz blanco, aguacate y ají.",
+    "region": "Costa"
+  },
+  {
+    "id": 8,
+    "nombre": "Maito de Tilapia Amazónica",
+    "marca": "Amazonía Viva",
+    "categoria": "Platos Fuertes",
+    "precio": 10.50,
+    "imagen": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=600&q=80",
+    "descripcion": "Pescado entero de agua dulce sazonado con sal marina y envuelto en hojas de bijao, asado a las brasas de carbón. Acompañado de yuca frita.",
+    "region": "Amazonía"
+  },
+  {
+    "id": 9,
+    "nombre": "Humitas Tradicionales de Choclo (2 unidades)",
+    "marca": "Sierra Andina",
+    "categoria": "Entradas y Piqueos",
+    "precio": 3.50,
+    "imagen": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=600&q=80",
+    "descripcion": "Pastelitos al vapor de maíz tierno molido con queso fresco, cebolla blanca y huevo, envueltos en las propias hojas de choclo.",
+    "region": "Sierra"
+  },
+  {
+    "id": 10,
+    "nombre": "Fanesca Gourmet (Temporada)",
+    "marca": "Sierra Andina",
+    "categoria": "Sopas Tradicionales",
+    "precio": 12.00,
+    "imagen": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=600&q=80",
+    "descripcion": "Emblemática sopa elaborada con 12 granos andinos frescos, bacalao seco curado, leche, queso, decorada con empanaditas, masitas fritas y huevo duro.",
+    "region": "Sierra"
+  },
+  {
+    "id": 11,
+    "nombre": "Empanadas de Viento con Azúcar (3 unidades)",
+    "marca": "Sierra Andina",
+    "categoria": "Entradas y Piqueos",
+    "precio": 3.00,
+    "imagen": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=600&q=80",
+    "descripcion": "Crujientes empanadas gigantes de harina de trigo rellenas de queso derretido, espolvoreadas con azúcar fina al salir del perol.",
+    "region": "Sierra"
+  },
+  {
+    "id": 12,
+    "nombre": "Espumilla de Guayaba Tradicional",
+    "marca": "Sierra Andina",
+    "categoria": "Postres y Bebidas",
+    "precio": 2.50,
+    "imagen": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80",
+    "descripcion": "Postre tradicional batido a mano elaborado con pulpa de guayaba natural, claras de huevo y azúcar, decorado con chispas de colores y arrope de mora.",
+    "region": "Sierra"
+  },
+  {
+    "id": 13,
+    "nombre": "Colada Morada con Guagua de Pan",
+    "marca": "Sierra Andina",
+    "categoria": "Postres y Bebidas",
+    "precio": 4.50,
+    "imagen": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=600&q=80",
+    "descripcion": "Bebida espesa ancestral a base de harina de maíz morado, frutas andinas (mora, mortiño, babaco, piña) y especias dulces, servida con una guagua de pan decorada.",
+    "region": "Sierra"
+  },
+  {
+    "id": 14,
+    "nombre": "Chicha de Jora Artesanal (1 Litro)",
+    "marca": "Amazonía Viva",
+    "categoria": "Postres y Bebidas",
+    "precio": 3.80,
+    "imagen": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80",
+    "descripcion": "Bebida ancestral fermentada a base de maíz germinado (jora), endulzada con panela orgánica y aromatizada con hierbas andinas.",
+    "region": "Sierra / Amazonía"
+  },
+  {
+    "id": 15,
+    "nombre": "Muchines de Yuca con Queso (4 unidades)",
+    "marca": "Manabí Gourmet",
+    "categoria": "Entradas y Piqueos",
+    "precio": 3.75,
+    "imagen": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=600&q=80",
+    "descripcion": "Croquetas doradas de masa fresca de yuca rellenas con queso de hoja, fritas al punto crujiente por fuera y suaves por dentro.",
+    "region": "Costa"
+  }
+]
+

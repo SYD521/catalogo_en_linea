@@ -1,16 +1,23 @@
 {
   "name": "catalogo_en_linea",
   "version": "1.0.0",
-  "description": "DESPLIEGUE AUTOMATIZADO DE UN CATÁLOGO EN LÍNEA (Despliegue automatizado y continuo CD)",
-  "main": "index.js",
+  "description": "DESPLIEGUE AUTOMATIZADO DE UN CATÁLOGO EN LÍNEA - RESTAURANTE SABORES DEL ECUADOR",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "test": "node --test test/*.test.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SYD521/catalogo_en_linea.git"
   },
-  "keywords": [],
+  "keywords": [
+    "ecuador",
+    "catalogo",
+    "restaurante",
+    "express",
+    "docker"
+  ],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
